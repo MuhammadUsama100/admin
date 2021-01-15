@@ -8,6 +8,7 @@ const db =
   "mongodb+srv://usama:usama@cluster0.rzfij.mongodb.net/Cluster0?retryWrites=true&w=majority";
 
 const connectDB = async () => {
+  //
   try {
     await mongoose.connect(db, {
       useNewUrlParser: true,
