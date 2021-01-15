@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    h1= "data entry postal"
+    form(name="add-estimation", method="post" action= "/users")
+        div.input
+            span.label CODE     :
+            br
+            input(type="text", name="Code")
+        div.input
+            span.label DESCRIPTION      :
+            br
+            input(type="text", name="Description")
+        div.input
+            span.label CHARGE FOR PRIVATE      :
+            br
+            input(type="text", name="ChargeForPrivatePatients")
+        div.input
+            span.label SPECIAL DISCOUNT      :
+            br
+            input(type="text", name="SpecialDiscounts")
+        div.input
+            span.label DISCOUNT %      :
+            br
+            input(type="text", name="Discount")
+        div.input
+            span.label FINAL DISCOUNT     :
+            br
+            input(type="text", name="FinalDiscount")
+        div.actions
+            input(type="submit", value="add")
